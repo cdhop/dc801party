@@ -1,0 +1,15 @@
+I, [2017-07-23T16:22:43.485778 #2130]  INFO -- : Refreshing Gem list
+I, [2017-07-23T16:22:44.105423 #2130]  INFO -- : listening on addr=0.0.0.0:9000 fd=9
+I, [2017-07-23T16:22:44.108278 #2130]  INFO -- : master process ready
+I, [2017-07-23T16:22:44.108319 #2143]  INFO -- : worker=0 ready
+I, [2017-07-23T16:22:44.108728 #2144]  INFO -- : worker=1 ready
+I, [2017-07-23T16:22:44.109447 #2145]  INFO -- : worker=2 ready
+I, [2017-07-23T16:22:44.109869 #2146]  INFO -- : worker=3 ready
+127.0.0.1 - - [23/Jul/2017:16:22:53 -0600] "GET / HTTP/1.1" 200 1517 0.0684
+127.0.0.1 - - [23/Jul/2017:16:22:53 -0600] "GET /css/site.css HTTP/1.1" 200 - 0.0470
+127.0.0.1 - - [23/Jul/2017:16:22:54 -0600] "GET /favicon.ico HTTP/1.1" 404 1672 0.0575
+I, [2017-07-23T16:22:59.959148 #2130]  INFO -- : reaped #<Process::Status: pid 2146 exit 0> worker=3
+I, [2017-07-23T16:22:59.959392 #2130]  INFO -- : reaped #<Process::Status: pid 2145 exit 0> worker=2
+I, [2017-07-23T16:22:59.959513 #2130]  INFO -- : reaped #<Process::Status: pid 2144 exit 0> worker=1
+I, [2017-07-23T16:22:59.959583 #2130]  INFO -- : reaped #<Process::Status: pid 2143 exit 0> worker=0
+I, [2017-07-23T16:22:59.959867 #2130]  INFO -- : master complete
