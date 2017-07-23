@@ -1,0 +1,17 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Order Details</div> 
+    <div class="panel-body">
+      <table class="table">
+        <tr><th>Name</th><td><%= @order_details['firstname'] + ' ' + @order_details['lastname'] %></td></tr>
+        <tr><th>Handle</th><td><%= @order_details['handle'] %></td></tr>
+        <tr><th>Confirmation Code</th><td><%= @order_details['confirmation_code'] %></td></td>
+        <tr><th>Amount</th><td>$<%= @order_details['amount'] %></td></tr>
+        <tr><th>Ticket Number</th><td><%= @order_details['ticketnumber'] %></td></tr>
+      </table>
+      <div name="order_complete" id="order_complete">
+        <a class="btn btn-danger btn-lg btn-block" href="/order/<%= @order_details['confirmation_code'] %>/complete">Complete Order</a>
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-primary btn-lg btn-block" href="/scan" role="button">Scan</a>
+</div>

@@ -1,0 +1,35 @@
+<form id="qrcode_form">
+  <fieldset>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Scan</div>
+        <div class="panel-body">
+          <div class="input-group">
+            <div  class="center" id="reader" style="width:300px;height:250px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+<script src="js/jsqrcode-combined.min.js"></script>
+<script src="js/html5-qrcode.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#reader').html5_qrcode(function(data){
+      try {
+        var valid_guid = new RegExp("[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}");
+        if(! valid_guid.test(data)) throw "Invalid QR code";
+        window.location.href = '/order/' + data;
+      }
+      catch (err) {
+        alert(err);
+      }
+    },
+      function(error){
+      }, function(videoError){
+        alert("Unable to access video source");
+      }
+    );
+  });
+</script>

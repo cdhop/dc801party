@@ -1,0 +1,14 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Error</div>
+    <div class="panel-body">
+      <div class="input-group">
+        <% if @error_message != nil %>
+		  <h3><%= @error_message %>
+		<% else %>
+		  <p>Something went wrong</p>
+		<% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
