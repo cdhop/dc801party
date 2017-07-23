@@ -13,3 +13,33 @@ I, [2017-07-23T16:22:59.959392 #2130]  INFO -- : reaped #<Process::Status: pid 2
 I, [2017-07-23T16:22:59.959513 #2130]  INFO -- : reaped #<Process::Status: pid 2144 exit 0> worker=1
 I, [2017-07-23T16:22:59.959583 #2130]  INFO -- : reaped #<Process::Status: pid 2143 exit 0> worker=0
 I, [2017-07-23T16:22:59.959867 #2130]  INFO -- : master complete
+I, [2017-07-23T17:26:35.482016 #2228]  INFO -- : Refreshing Gem list
+I, [2017-07-23T17:26:36.105770 #2228]  INFO -- : listening on addr=0.0.0.0:8099 fd=9
+I, [2017-07-23T17:26:36.108664 #2228]  INFO -- : master process ready
+I, [2017-07-23T17:26:36.114225 #2241]  INFO -- : worker=0 ready
+I, [2017-07-23T17:26:36.114344 #2244]  INFO -- : worker=3 ready
+I, [2017-07-23T17:26:36.114396 #2243]  INFO -- : worker=2 ready
+I, [2017-07-23T17:26:36.115129 #2242]  INFO -- : worker=1 ready
+I, [2017-07-23T17:26:42.579397 #2228]  INFO -- : reaped #<Process::Status: pid 2244 exit 0> worker=3
+I, [2017-07-23T17:26:42.579614 #2228]  INFO -- : reaped #<Process::Status: pid 2243 exit 0> worker=2
+I, [2017-07-23T17:26:42.579751 #2228]  INFO -- : reaped #<Process::Status: pid 2242 exit 0> worker=1
+I, [2017-07-23T17:26:42.579790 #2228]  INFO -- : reaped #<Process::Status: pid 2241 exit 0> worker=0
+I, [2017-07-23T17:26:42.580116 #2228]  INFO -- : master complete
+I, [2017-07-23T17:27:10.338904 #2250]  INFO -- : Refreshing Gem list
+I, [2017-07-23T17:27:10.970250 #2250]  INFO -- : listening on addr=0.0.0.0:8099 fd=9
+I, [2017-07-23T17:27:10.974109 #2250]  INFO -- : master process ready
+I, [2017-07-23T17:27:10.979352 #2263]  INFO -- : worker=0 ready
+I, [2017-07-23T17:27:10.980249 #2264]  INFO -- : worker=1 ready
+I, [2017-07-23T17:27:10.980144 #2265]  INFO -- : worker=2 ready
+I, [2017-07-23T17:27:10.981390 #2266]  INFO -- : worker=3 ready
+127.0.0.1 - - [23/Jul/2017:17:27:18 -0600] "GET / HTTP/1.1" 200 1517 0.0819
+127.0.0.1 - - [23/Jul/2017:17:27:18 -0600] "GET /css/site.css HTTP/1.1" 200 - 0.0644
+127.0.0.1 - - [23/Jul/2017:17:27:18 -0600] "GET /favicon.ico HTTP/1.1" 404 1672 0.0470
+127.0.0.1 - - [23/Jul/2017:17:27:22 -0600] "GET /scan HTTP/1.1" 200 2389 0.0029
+127.0.0.1 - - [23/Jul/2017:17:27:22 -0600] "GET /js/jsqrcode-combined.min.js HTTP/1.1" 200 65640 0.0036
+127.0.0.1 - - [23/Jul/2017:17:27:22 -0600] "GET /js/html5-qrcode.min.js HTTP/1.1" 200 1746 0.0018
+I, [2017-07-23T17:27:36.524073 #2250]  INFO -- : reaped #<Process::Status: pid 2266 exit 0> worker=3
+I, [2017-07-23T17:27:36.524186 #2250]  INFO -- : reaped #<Process::Status: pid 2265 exit 0> worker=2
+I, [2017-07-23T17:27:36.524239 #2250]  INFO -- : reaped #<Process::Status: pid 2264 exit 0> worker=1
+I, [2017-07-23T17:27:36.524367 #2250]  INFO -- : reaped #<Process::Status: pid 2263 exit 0> worker=0
+I, [2017-07-23T17:27:36.525046 #2250]  INFO -- : master complete
