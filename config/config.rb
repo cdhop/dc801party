@@ -1,4 +1,4 @@
-require 'sinatra/base'
+require 'sinatra'
 require 'sanitize'
 require 'carmen'
 require 'curb'
